@@ -1,0 +1,69 @@
+{
+  "expo": {
+    "name": "Bookish Beasts",
+    "slug": "react_native_yarn",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/bookish_icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "booking.api"
+    },
+    "android": {
+      "usesCleartextTraffic": true,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/bookish_icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "splash": {
+        "image": "./assets/bookish_icon.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#ffffff",
+        "dark": {
+          "image": "./assets/bookish_dark_icon.png",
+          "backgroundColor": "#1C1C1C"
+        }
+      },
+      "package": "com.re1nger.react_native_yarn",
+      "googleServicesFile": "./google-services.json"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "scheme": "test-scheme",
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-localization",
+      ["expo-build-properties", {
+         "android": {
+          "usesCleartextTraffic": true
+        }
+      }],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/transparent_icon.png",
+          "color": "#000000"
+        }
+      ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "33df8d68-1a21-4e80-bfe3-c5e4f8584312"
+      }
+    }
+  }
+}
